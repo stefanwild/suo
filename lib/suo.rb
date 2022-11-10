@@ -2,7 +2,7 @@ require "securerandom"
 require "monitor"
 
 require "dalli"
-require "dalli/cas/client"
+require "dalli/cas/client" unless Dalli::VERSION > "3"
 
 require "redis"
 
